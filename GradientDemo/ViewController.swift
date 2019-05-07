@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         let color4 = UIColor(white: 0.0, alpha: 0.7).cgColor
         gradientLayer.colors = [color1, color2, color3, color4]
         gradientLayer.locations = [0.0, 0.25, 0.75, 1.0]
+ //       ToDo: 2 hàm dưới để tạo màu theo chiều ngang hay dọc
+//        gradientLayer.startPoint = CGPoint(x: 1, y: 0)
+//        gradientLayer.endPoint = CGPoint(x: 0, y: 0)
         self.view.layer.addSublayer(gradientLayer)
         self.view.backgroundColor = UIColor.green
         // Do any additional setup after loading the view, typically from a nib.
